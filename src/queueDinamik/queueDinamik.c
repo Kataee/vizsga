@@ -40,7 +40,7 @@ int deleteFirstQueueD(QUEUENODED** front) {
         printf("QueueD is empty, cannot delete\n");
         return INT_MIN;
     }
-    QUEUENODED* auxNode =  &front;
+    QUEUENODED* auxNode =  *front;
     int auxInfo = (*front)->info;
 
     (*front) = (*front)->next;
@@ -58,6 +58,6 @@ void printQueueD(QUEUENODED* next) {
     if (next->next == NULL) {
         return;
     }
-    printQueueD(next->next);
+    printQueueD((QUEUENODED *) next->next);
 
 }

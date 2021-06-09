@@ -38,7 +38,7 @@ int main() {
     //stackRun();
     //setRun();
     //queueRun();
-    queueDinamikRun();
+    //queueDinamikRun();
     //stackDinamikRun();
     //singleLinkedListRun();
     //doublyLinkedListRun();

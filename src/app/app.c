@@ -254,17 +254,21 @@ void queueRun() {
 void queueDinamikRun() {
     QUEUENODED* asd;
     createQueueD(&asd);
+    deleteFirstQueueD(&queueDFront);
+
     insertQueueD(&queueDFront, &queueDLast, 1);
     insertQueueD(&queueDFront, &queueDLast, 2);
     insertQueueD(&queueDFront, &queueDLast, 3);
     insertQueueD(&queueDFront, &queueDLast, 4);
+    printQueueD(queueDFront);
+    deleteFirstQueueD(&queueDFront);
     deleteFirstQueueD(&queueDFront);
     printQueueD(queueDFront);
     printf("\n");
     isQueueDEmpty(asd) ? printf("QueueD ures\n") : printf("QueueD nem ures\n");
 }
 void singleLinkedListRun() {
-    NodeType **asd = NULL;
+    NodeType *asd = NULL;
     inicializalas();
     Create(&asd);
     ListaBejaras();
