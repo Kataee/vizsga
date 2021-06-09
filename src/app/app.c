@@ -327,3 +327,43 @@ void doublyLinkedListRun() {
     printList(head);
 
 }
+void bintreeIntRun() {
+    BintreeInt * asd =NULL;
+    //27, 14, 35, 10, 19, 31, 42
+    insertBintreeInt(&asd, 27);
+    insertBintreeInt(&asd, 14);
+    insertBintreeInt(&asd, 35);
+    insertBintreeInt(&asd, 10);
+    insertBintreeInt(&asd, 19);
+    insertBintreeInt(&asd, 31);
+    insertBintreeInt(&asd, 42);
+
+    printf("inorder ");
+    inorder(asd);
+    printf("\n");
+    printf("preorder ");
+    preorder(asd);
+    printf("\n");
+    printf("postorder ");
+    postorder(asd);
+    printf("\n");
+    findBintreeInt(asd, 7) ? printf("True\n") : printf("False\n");
+
+    //deleteNode(asd, 8);
+    inorder(asd);
+    printf("Max: %i \n", maxValueNodeBintreeInt(asd)->info);
+    printf("Min: %i \n", minValueNodeBintreeInt(asd)->info);
+    nextNodeBintreeInt(asd) ? printf("Next: %i \n", asd->right->info) : printf("Nincsz\n");
+    printf("Min: %i \n", minValueNodeBintreeInt(asd)->info);
+
+    //struct Node* temp = parent(asd,5);
+    //printf("parent: %i\n", temp->info);
+
+
+    fel2();
+    //haha ez a B sequence nem clean code + még
+    // lehetne fÜggvényesíteni is, de sokat gondolkodtam rajta
+    //mire egészen összeállt az egész, ezért hagytam benne mindenféle kiírást is
+    //hogy lássék benne a munkám, nem mindenkinek megy ám olyan könnyen, hiába
+    //easy level a feladat #kellazátmenő
+}

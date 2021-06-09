@@ -23,8 +23,8 @@
 #include "singleLinkedList/singleLinkedList.c"
 #include "doublyLinkedList/doublyLinkedList.h"
 #include "doublyLinkedList/doublyLinkedList.c"
-//#include "bintreeInt/bintreeInt.h"
-//#include "bintreeInt/bintreeInt.c"
+#include "bintreeInt/bintreeInt.h"
+#include "bintreeInt/bintreeInt.c"
 
 
 
@@ -42,7 +42,7 @@ int main() {
     //stackDinamikRun();
     //singleLinkedListRun();
     //doublyLinkedListRun();
-    //bintreeIntRun();
+    bintreeIntRun();
 
     return 0;
 }
