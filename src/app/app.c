@@ -367,3 +367,24 @@ void bintreeIntRun() {
     //hogy lássék benne a munkám, nem mindenkinek megy ám olyan könnyen, hiába
     //easy level a feladat #kellazátmenő
 }
+void heapRun() {
+
+    HEAP *h = createHeap(32);
+    FILE *f = fopen("in.txt", "r");
+    int buffer;
+    while (fscanf(f, "%i", &buffer) != EOF) {
+        insertHeap(h, buffer);
+    }
+    printf("Print as it is:\n");
+    printHeap(h);
+    printf("\nmax: %i\n", max(h));
+    printf("size: %i\n", h->size);
+    printf("Print: \n");
+    printHeap(h);
+    printf("Max: %i\n", torolmax(h));
+    printHeap(h);
+    fclose(f);
+
+    //fel22();
+
+}

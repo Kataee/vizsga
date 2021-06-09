@@ -25,6 +25,8 @@
 #include "doublyLinkedList/doublyLinkedList.c"
 #include "bintreeInt/bintreeInt.h"
 #include "bintreeInt/bintreeInt.c"
+//#include "heap/heap.h"
+#include "heap/heap.c"
 
 
 
@@ -42,7 +44,7 @@ int main() {
     //stackDinamikRun();
     //singleLinkedListRun();
     //doublyLinkedListRun();
-    bintreeIntRun();
-
+    //bintreeIntRun();
+    heapRun();
     return 0;
 }

@@ -10,6 +10,7 @@ void setRun();
 void stackDinamikRun();
 void singleLinkedListRun();
 void doublyLinkedListRun();
+void heapRun();
 
 
 
