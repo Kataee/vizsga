@@ -271,6 +271,7 @@ void singleLinkedListRun() {
     NodeType *asd = NULL;
     inicializalas();
     Create(&asd);
+    /*
     ListaBejaras();
     ElemBeszurasElore(1);
     ElemBeszurasElore(2);
@@ -295,6 +296,13 @@ void singleLinkedListRun() {
     ListabanKereses(1) ? printf("VAN\n") : printf ("nincs\n");
 
     ListaTeljesTorlese();
+    ListaBejaras();
+     */
+    ListaBejaras();
+    ElemBeszurasSorrendben(5);
+    ElemBeszurasSorrendben(6);
+    ElemBeszurasSorrendben(4);
+    ElemBeszurasSorrendben(1);
     ListaBejaras();
 }
 void doublyLinkedListRun() {
@@ -366,6 +374,19 @@ void bintreeIntRun() {
     //mire egészen összeállt az egész, ezért hagytam benne mindenféle kiírást is
     //hogy lássék benne a munkám, nem mindenkinek megy ám olyan könnyen, hiába
     //easy level a feladat #kellazátmenő
+}
+void bintreeRun() {
+    bintree_t* binword;
+    binword = bintree_create("egy");
+    bintree_insert(binword, "ketto");
+    bintree_insert(binword, "harom");
+    bintree_insert(binword, "negy");
+    bintree_print(binword);
+    printf("\nMegtalalva: %s\n", bintree_search(binword, "egy")->word);
+    bintree_remove(binword, "egy");
+    bintree_print(binword);
+    printf("Count: %i\n", bintree_count(binword));
+    bintree_free(binword);
 }
 void heapRun() {
 

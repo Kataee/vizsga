@@ -20,7 +20,7 @@ void c_op_inc() {
 }
 
 void c_cm_inc() {
-    c_cm_add(1);
+    ;//c_cm_add(1);
 }
 
 counters_t c_get() {

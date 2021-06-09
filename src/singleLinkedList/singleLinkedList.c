@@ -54,6 +54,43 @@ void ElemBeszurasVegere(int num){
     }
 }
 
+void ElemBeszurasSorrendben(int num) {
+    NodeType *new;
+    Create(&new);
+    new->info = num;
+    new->next = NULL;
+    if (front == NULL) {
+        front = new;
+        return;
+    }
+
+    NodeType *temp;
+    Create(&temp);
+    temp = front;
+    while (temp->next != NULL) {
+        temp = temp->next;
+    }
+    temp->next = new;
+
+
+    temp=front;
+    while (new->info < temp->info) {
+        swapListItem(&new->info, &temp->info);
+        if (temp->next == NULL) {
+            return;
+        }
+        temp = temp->next;
+    }
+
+
+}
+
+void swapListItem(int* a, int* b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
 void BeszurasMegadottHelyre(int num, int poz){
     NodeType * new;
     Create(&new);

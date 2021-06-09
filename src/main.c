@@ -45,6 +45,7 @@ int main() {
     //singleLinkedListRun();
     //doublyLinkedListRun();
     //bintreeIntRun();
-    heapRun();
+    bintreeRun();
+    //heapRun();
     return 0;
 }

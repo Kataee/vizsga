@@ -29,5 +29,6 @@ void ListabolTorles(int torlendo);
 void ListaTeljesTorlese();
 bool ListabanKereses(int n);
 
-
+void ElemBeszurasSorrendben(int num);
+void swapListItem(int* a, int* b);
 #endif //VIZSGA_SINGLELINKEDLIST_H
